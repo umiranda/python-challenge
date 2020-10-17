@@ -22,6 +22,7 @@ with open(filepath, 'r') as input_file:
         Voter_ID.append(row[0])
         Candidate.append(row[2])
         Num_vot = len(Voter_ID)
+        #condition to check if the row matches the Candidates
         if (row[2] in Candidates):
             Candidates[row[2]] +=1
         else:
